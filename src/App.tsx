@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import TetoChatbot from './TetoChatbot'
 
-function App() {
+
+
+const App: React.FC = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <TetoChatbot
+      avatar={"https://uploaddeimagens.com.br/images/002/892/553/original/leia_chatbot_logo.jpg?1600904375"}
+      chatbotName={"TETO"}
+      callToAction={"Olá, posso te ajudar?"}
+    />
+    </>
+  )
 }
 
-export default App;
+export default App
