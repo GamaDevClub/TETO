@@ -22,11 +22,9 @@ export const Block = styled.div`
   opacity: 0.5;
 `;
 
-
-
 export const BotContainer = styled.div`
   margin: 0;
-  width: 400px;
+  width: 300px;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -39,7 +37,7 @@ export const BotHeader = styled.div`
   display: flex;
   align-items: center;
   padding: 6px;
-  background: #0f0f0f;
+  background: rgb(0, 146, 221);
   margin: 0;
   color: #fff;
   border-radius: 30px 0 0 0;
@@ -61,8 +59,16 @@ export const BotHeader = styled.div`
   }
 `;
 
-export const BotIframeStyle = styled.div`
-  width: 350px;
-  height: 300px;
-  background: #fff;
+export const QRcodeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 16px;
+  background: rgb(0, 146, 221);
+  height: 200px;
+
+  img {
+    height: 100%;
+  }
 `;
+

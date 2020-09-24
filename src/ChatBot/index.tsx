@@ -19,7 +19,7 @@ const bubbleStyles = {
   },
   bot: {
     styles: {
-      background: "#0f0f0f",
+      background: "rgb(0, 146, 221)",
       color: "white",
     }
   }

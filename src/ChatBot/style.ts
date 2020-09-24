@@ -31,6 +31,9 @@ export const InputMessageContainer = styled.div`
     outline: none !important;
     border: 0;
     background: white;
+    svg {
+      color: rgb(0, 146, 221);
+    }
   }
 `;
 

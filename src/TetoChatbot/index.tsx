@@ -1,19 +1,18 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import { Transition, animated } from 'react-spring/renderprops'
-import useMousePosition from './utils/useMousePosition'
-import { Block, BotContainer, BotHeader, PreBlock } from './styles'
-import ChatBot from './ChatBot';
+import useMousePosition from '../utils/useMousePosition'
+import { Block, BotContainer, BotHeader, PreBlock, QRcodeContainer } from './styles'
+import ChatBot from '../ChatBot';
 import { MdClose } from 'react-icons/md'
+import logoTeto from '../Files/teto_logo.jpg'
 
 
 interface LeiaChatBotProps {
-  avatar: string;
   chatbotName: string;
   callToAction: string;
 }
 
 const TetoChatbot: React.FC<LeiaChatBotProps> = ({
-  avatar,
   chatbotName,
   callToAction,
 }) => {
@@ -69,15 +68,21 @@ const TetoChatbot: React.FC<LeiaChatBotProps> = ({
 
       <BotContainer >
         <BotHeader onMouseEnter={handleOpenBotHover}>
-          <img src={avatar} alt="Chatbot avatar" className="botHeaderImage"></img>
+          <img src={logoTeto} alt="Chatbot avatar" className="botHeaderImage"/>
           {open ? (<><strong>{chatbotName}</strong> <MdClose onClick={handleCloseBot} size={24} /></>) : <p>{callToAction}</p>}
 
         </BotHeader>
+        <QRcodeContainer>
+          <img
+            src={"https://media.discordapp.net/attachments/747981117457563762/758761663599607848/tetobrasilqrcode.png"}
+            alt="QR code TETO"
+          />
+        </QRcodeContainer>
         <Transition
           native
           items={open}
           from={{ height: 0 }}
-          enter={{ height: 400 }}
+          enter={{ height: 300 }}
           leave={{ height: 0 }}
         >
 
