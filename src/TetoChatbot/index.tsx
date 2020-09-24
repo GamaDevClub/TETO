@@ -5,6 +5,7 @@ import { Block, BotContainer, BotHeader, PreBlock, QRcodeContainer } from './sty
 import ChatBot from '../ChatBot';
 import { MdClose } from 'react-icons/md'
 import logoTeto from '../Files/teto_logo.jpg'
+import QrCode from '../Files/qrcode.png'
 
 
 interface LeiaChatBotProps {
@@ -74,7 +75,7 @@ const TetoChatbot: React.FC<LeiaChatBotProps> = ({
         </BotHeader>
         <QRcodeContainer>
           <img
-            src={"https://media.discordapp.net/attachments/747981117457563762/758761663599607848/tetobrasilqrcode.png"}
+            src={QrCode}
             alt="QR code TETO"
           />
         </QRcodeContainer>
