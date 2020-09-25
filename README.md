@@ -16,7 +16,7 @@ Por meio de um QR code o usuário é levado para o PicPay da instituição e cas
 
 ### Proposta expandida
 
-Como implementação futura. Ao invés o QR code ser atrelado a apenas um meio de pagamento o ideal é que o usuário seja encaminhado para uma tela contendo diversos serviços. Por exemplo Ame, Pag Seguro, PayPal...
+Como implementação futura. Ao invés de o QR code ser atrelado a apenas um meio de pagamento o ideal é que o usuário seja encaminhado para uma tela contendo diversos serviços. Por exemplo Ame, Pag Seguro, PayPal...
 Dessa forma basta que seja clicada a opção desejada para entrar diretamente no aplicativo. Como vantagem existe a redução de burocracia no momento da doação. 
 
 ![Home](docs/proposta.PNG)
