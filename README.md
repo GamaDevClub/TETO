@@ -9,14 +9,14 @@ Tomando como partida a necessidade de implementar novos meios de pagamento que f
 Por meio de um QR code o usuário é levado para o PicPay da instituição e caso tenha alguma dúvida pode consultar o chatbot. Propiciando um maior engajamento no momento da visita ao site. 
 
 - Leia chatbot fechado 
-![Home](teto_close.PNG)
+![Home](docs/teto_close.PNG)
 
 - Leia chatbot aberto 
-![Home](teto_open.PNG)
+![Home](docs/teto_open.PNG)
 
 ### Proposta expandida
 
 Como implementação futura. Ao invés o QR code ser atrelado a apenas um meio de pagamento o ideal é que o usuário seja encaminhado para uma tela contendo diversos serviços. Por exemplo Ame, Pag Seguro, PayPal...
 Dessa forma basta que seja clicada a opção desejada para entrar diretamente no aplicativo. Como vantagem existe a redução de burocracia no momento da doação. 
 
-![Home](proposta.PNG)
+![Home](docs/proposta.PNG)
