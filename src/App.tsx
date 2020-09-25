@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <>
       <TetoChatbot
       chatbotName={"TETO"}
-      callToAction={"Olá, posso te ajudar?"}
+      callToAction={"Faça uma doação"}
     />
     <div className={"full"}/>
     </>

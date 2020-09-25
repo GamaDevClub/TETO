@@ -91,7 +91,7 @@ const TetoChatbot: React.FC<LeiaChatBotProps> = ({
             show &&
             (props => (
               <animated.div style={props}>
-                <ChatBot callToAction={callToAction} />
+                <ChatBot/>
               </animated.div>
             ))
           }

@@ -65,7 +65,7 @@ export const QRcodeContainer = styled.div`
   flex: 1;
   padding: 16px;
   background: rgb(0, 146, 221);
-  height: 200px;
+  height: 150px;
 
   img {
     height: 100%;

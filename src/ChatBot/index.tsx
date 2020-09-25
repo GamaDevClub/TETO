@@ -32,8 +32,8 @@ Amplify.configure({
   },
   Interactions: {
     bots: {
-      "leiabot_dev": {
-        "name": "leiabot_dev",
+      "Doe_Teto": {
+        "name": "Doe_Teto",
         "alias": "$LATEST",
         "region": "us-west-2",
       },
@@ -49,16 +49,15 @@ interface ICard {
 }
 
 interface IChatBotProps {
-  callToAction: string;
 }
 
-const ChatBot: React.FC<IChatBotProps> = ({ callToAction }) => {
+const ChatBot: React.FC<IChatBotProps> = () => {
 
   const [input, setInput] = useState('')
   const [messages, setMessages] = useState<Message[]>([
     {
       user: "bot",
-      text: callToAction,
+      text: `Seja bem vindo ao TETO! Esse é o nosso QR code por meio dele você nos ajuda fazendo uma doação. Para mais informações digite "quero doar" `,
     }
   ])
 
@@ -87,7 +86,7 @@ const ChatBot: React.FC<IChatBotProps> = ({ callToAction }) => {
 
 
       //Send message to AWS
-      const response = await Interactions.send("leiabot_dev", inputMessage);
+      const response = await Interactions.send("Doe_Teto", inputMessage);
       console.log(response);
 
       const responseMessage: Message = {
